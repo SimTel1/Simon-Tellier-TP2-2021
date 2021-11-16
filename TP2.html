@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Favoris</title>
+    <style>
+        body {
+            background-image: url('images/Fond.png');
+            background-size: cover;
+        }
+
+        .main,
+        li {
+            margin: 0px;
+            padding: 10px;
+        }
+
+        li {
+            display: block;
+            cursor: pointer;
+            list-style: none;
+            position: relative;
+            font-family: Arial;
+            width: 160px;
+            height: 25px;
+            color: white;
+            padding: 5px;
+            margin-top: 10px;
+            border-radius: 10px;
+            background-color: rgba(0, 0, 0, 0.1);
+        }
+
+        a {
+            color: inherit;
+            width: inherit;
+            height: inherit;
+            text-decoration: none;
+        }
+
+        ul {
+            color: white;
+        }
+
+        ul.sub {
+            display: none;
+        }
+
+        .main li:hover {
+            color: cyan;
+            background-color: rgba(0, 0, 255, 0.2);
+        }
+
+        li:hover>.sub {
+            display: block;
+            position: absolute;
+            top: -10px;
+            left: 83%;
+        }
+
+        .icon {
+            width: 18px;
+            height: 18px;
+            margin-left: 2px;
+            margin-top: 2px;
+        }
+
+        div.subicon {
+            width: 15px;
+            height: 25px;
+            margin-top: 4px;
+            float: right;
+            background: url("images/ICON_submenu.png") no-repeat;
+        }
+    </style>
+ 
+</head>
+
+<body>
+    <ul class="main">
+        <h1>Favoris</h1>
+        <li>
+            <img src="images/music_icon.png" class="icon" /> Musiques
+
+            <div class="subicon"></div>
+            <ul class="sub">
+                <li>Rock</li>
+                <li>
+                    Jazz
+                    <div class="subicon"></div>
+                    <ul class="sub">
+                        <li> Pat Metheny</li>
+                        <li> Miles Davis </li>
+                        <li>
+                            UZEB
+                            <div class="subicon"></div>
+                            <ul class="sub">
+                                <li> Alain Caron</li>
+                                <li> Michel Cusson</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li> Latin</li>
+                <li> Blues</li>
+                <li> Metal</li>
+                <li> Classic</li>
+                <li> Folk</li>
+            </ul>
+        </li>
+        <li>
+            <img src="images/news_icon.png" class="icon" /> Nouvelles
+            <div class="subicon"></div>
+            <ul class="sub">
+                <li>
+                    <img src="images/radio_canada_icon.png" class="icon" />
+                    <a href="http://www.radio-canada.ca" target="_blank">
+                        Radio-canada
+                    </a>
+                </li>
+                <li>
+                    <img src="images/nbc_icon.png" class="icon" />
+                    <a href="http://www.nbc.com/" target="_blank">
+                        NBC news
+                    </a>
+                </li>
+                <li>
+                    <img src="images/cnn_icon.png" class="icon" />
+                    <a href="http://www.cnn.com/" target="_blank">
+                        CNN news
+                    </a>
+                </li>
+                <li>
+                    <img src="images/meteo_icon.png" class="icon" /> Météo
+                    <div class="subicon"></div>
+                    <ul class="sub">
+                        <li>
+                            <img src="images/meteo_media_icon.png" class="icon" />
+                            <a href="http://www.meteomedia.com/weather/caqc0055" target="_blank">
+                                Météomédia
+                            </a>
+                        </li>
+                        <li>
+                            <img src="images/hurricane_icon.png" class="icon" />
+                            <a href="http://www.nhc.noaa.gov/" target="_blank">
+                                Ouragan
+                            </a>
+                        </li>
+                        <li>
+                            <img src="images/wunder_icon.png" class="icon" />
+                            <a href="http://www.wunderground.com/wundermap/" target="_blank">
+                                Wunder Ground
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li>
+            <img src="images/game_icon.png" class="icon" /> Jeux
+            <div class="subicon"></div>
+            <ul class="sub">
+                <li>
+                    <img src="images/backgammon_icon.png" class="icon" />
+                    <a href="http://zone.msn.com/en/backgammon/default.htm" target="_blank">
+                        Backgammon
+                    </a>
+                </li>
+                <li>
+                    <img src="images/reversi_icon.png" class="icon" />
+                    <a href="http://www.mah-jongg.ch/reversi/reversi.html" target="_blank">
+                        Reversi
+                    </a>
+                </li>
+            </ul>
+        </li>
+        <li>
+            <img src="images/contact_icon.png" class="icon" /> Contacts
+            <div class="subicon"></div>
+            <ul class="sub">
+                <li>
+                    <img src="images/facebook_icon.png" class="icon" />
+                    <a href="https://www.facebook.com/" target="_blank">
+                        Facebook
+                    </a>
+                </li>
+                <li>
+                    <img src="images/twitter_icon.png" class="icon" />
+                    <a href="https://twitter.com/" target="_blank">
+                        Twitter
+                    </a>
+                </li>
+                <li>
+                    <img src="images/google_plus_icon.png" class="icon" />
+                    <a href="https://accounts.google.com" target="_blank">
+                        Google+
+                    </a>
+                </li>
+            </ul>
+        </li>
+    </ul>
+
+
+</body>
+
+</html>
